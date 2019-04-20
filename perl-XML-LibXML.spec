@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-LibXML
 Version  : 2.0134
-Release  : 11
+Release  : 12
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0134.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0134.tar.gz
 Source1  : http://http.debian.net/debian/pool/main/libx/libxml-libxml-perl/libxml-libxml-perl_2.0132+dfsg-2.debian.tar.xz
@@ -36,6 +36,7 @@ Summary: dev components for the perl-XML-LibXML package.
 Group: Development
 Requires: perl-XML-LibXML-lib = %{version}-%{release}
 Provides: perl-XML-LibXML-devel = %{version}-%{release}
+Requires: perl-XML-LibXML = %{version}-%{release}
 
 %description dev
 dev components for the perl-XML-LibXML package.
