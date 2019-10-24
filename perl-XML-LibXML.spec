@@ -4,15 +4,15 @@
 #
 Name     : perl-XML-LibXML
 Version  : 2.0201
-Release  : 14
+Release  : 15
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0201.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0201.tar.gz
 Source1  : http://cdn-fastly.deb.debian.org/debian/pool/main/libx/libxml-libxml-perl/libxml-libxml-perl_2.0134+dfsg-1.debian.tar.xz
 Summary  : 'Interface to Gnome libxml2 xml parsing and DOM library'
 Group    : Development/Tools
 License  : Artistic-1.0 Artistic-1.0-Perl GPL-1.0 MIT
-Requires: perl-XML-LibXML-data = %{version}-%{release}
 Requires: perl-XML-LibXML-license = %{version}-%{release}
+Requires: perl-XML-LibXML-perl = %{version}-%{release}
 BuildRequires : buildreq-cpan
 BuildRequires : libxml2-dev
 BuildRequires : perl(Alien::Base)
@@ -35,18 +35,9 @@ provides interfaces for parsing and manipulating XML files. This module allows
 Perl programmers to make use of its highly capable validating XML parser and
 its high performance DOM implementation.
 
-%package data
-Summary: data components for the perl-XML-LibXML package.
-Group: Data
-
-%description data
-data components for the perl-XML-LibXML package.
-
-
 %package dev
 Summary: dev components for the perl-XML-LibXML package.
 Group: Development
-Requires: perl-XML-LibXML-data = %{version}-%{release}
 Provides: perl-XML-LibXML-devel = %{version}-%{release}
 Requires: perl-XML-LibXML = %{version}-%{release}
 
@@ -60,6 +51,15 @@ Group: Default
 
 %description license
 license components for the perl-XML-LibXML package.
+
+
+%package perl
+Summary: perl components for the perl-XML-LibXML package.
+Group: Default
+Requires: perl-XML-LibXML = %{version}-%{release}
+
+%description perl
+perl components for the perl-XML-LibXML package.
 
 
 %prep
@@ -108,7 +108,50 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 %files
 %defattr(-,root,root,-)
 
-%files data
+%files dev
+%defattr(-,root,root,-)
+/usr/share/man/man3/XML::LibXML.3
+/usr/share/man/man3/XML::LibXML::Attr.3
+/usr/share/man/man3/XML::LibXML::AttributeHash.3
+/usr/share/man/man3/XML::LibXML::Boolean.3
+/usr/share/man/man3/XML::LibXML::CDATASection.3
+/usr/share/man/man3/XML::LibXML::Comment.3
+/usr/share/man/man3/XML::LibXML::Common.3
+/usr/share/man/man3/XML::LibXML::DOM.3
+/usr/share/man/man3/XML::LibXML::Devel.3
+/usr/share/man/man3/XML::LibXML::Document.3
+/usr/share/man/man3/XML::LibXML::DocumentFragment.3
+/usr/share/man/man3/XML::LibXML::Dtd.3
+/usr/share/man/man3/XML::LibXML::Element.3
+/usr/share/man/man3/XML::LibXML::ErrNo.3
+/usr/share/man/man3/XML::LibXML::Error.3
+/usr/share/man/man3/XML::LibXML::InputCallback.3
+/usr/share/man/man3/XML::LibXML::Literal.3
+/usr/share/man/man3/XML::LibXML::Namespace.3
+/usr/share/man/man3/XML::LibXML::Node.3
+/usr/share/man/man3/XML::LibXML::NodeList.3
+/usr/share/man/man3/XML::LibXML::Number.3
+/usr/share/man/man3/XML::LibXML::PI.3
+/usr/share/man/man3/XML::LibXML::Parser.3
+/usr/share/man/man3/XML::LibXML::Pattern.3
+/usr/share/man/man3/XML::LibXML::Reader.3
+/usr/share/man/man3/XML::LibXML::RegExp.3
+/usr/share/man/man3/XML::LibXML::RelaxNG.3
+/usr/share/man/man3/XML::LibXML::SAX.3
+/usr/share/man/man3/XML::LibXML::SAX::Builder.3
+/usr/share/man/man3/XML::LibXML::SAX::Generator.3
+/usr/share/man/man3/XML::LibXML::Schema.3
+/usr/share/man/man3/XML::LibXML::Text.3
+/usr/share/man/man3/XML::LibXML::XPathContext.3
+/usr/share/man/man3/XML::LibXML::XPathExpression.3
+
+%files license
+%defattr(0644,root,root,0755)
+/usr/share/package-licenses/perl-XML-LibXML/b4cd683c5038b733456bfbb680f75fb1e711599a
+/usr/share/package-licenses/perl-XML-LibXML/b8d8e3d6cebbef14f46031c868317e6820c9cc34
+/usr/share/package-licenses/perl-XML-LibXML/e5387b6e32d15d2a5a50b4600f520f1e2665bb8b
+
+%files perl
 %defattr(-,root,root,-)
 /usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/XML/LibXML.pm
 /usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/XML/LibXML.pod
@@ -154,46 +197,3 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 /usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/XML/LibXML/XPathContext.pod
 /usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/XML/LibXML/XPathExpression.pod
 /usr/lib/perl5/vendor_perl/5.28.2/x86_64-linux-thread-multi/auto/XML/LibXML/LibXML.so
-
-%files dev
-%defattr(-,root,root,-)
-/usr/share/man/man3/XML::LibXML.3
-/usr/share/man/man3/XML::LibXML::Attr.3
-/usr/share/man/man3/XML::LibXML::AttributeHash.3
-/usr/share/man/man3/XML::LibXML::Boolean.3
-/usr/share/man/man3/XML::LibXML::CDATASection.3
-/usr/share/man/man3/XML::LibXML::Comment.3
-/usr/share/man/man3/XML::LibXML::Common.3
-/usr/share/man/man3/XML::LibXML::DOM.3
-/usr/share/man/man3/XML::LibXML::Devel.3
-/usr/share/man/man3/XML::LibXML::Document.3
-/usr/share/man/man3/XML::LibXML::DocumentFragment.3
-/usr/share/man/man3/XML::LibXML::Dtd.3
-/usr/share/man/man3/XML::LibXML::Element.3
-/usr/share/man/man3/XML::LibXML::ErrNo.3
-/usr/share/man/man3/XML::LibXML::Error.3
-/usr/share/man/man3/XML::LibXML::InputCallback.3
-/usr/share/man/man3/XML::LibXML::Literal.3
-/usr/share/man/man3/XML::LibXML::Namespace.3
-/usr/share/man/man3/XML::LibXML::Node.3
-/usr/share/man/man3/XML::LibXML::NodeList.3
-/usr/share/man/man3/XML::LibXML::Number.3
-/usr/share/man/man3/XML::LibXML::PI.3
-/usr/share/man/man3/XML::LibXML::Parser.3
-/usr/share/man/man3/XML::LibXML::Pattern.3
-/usr/share/man/man3/XML::LibXML::Reader.3
-/usr/share/man/man3/XML::LibXML::RegExp.3
-/usr/share/man/man3/XML::LibXML::RelaxNG.3
-/usr/share/man/man3/XML::LibXML::SAX.3
-/usr/share/man/man3/XML::LibXML::SAX::Builder.3
-/usr/share/man/man3/XML::LibXML::SAX::Generator.3
-/usr/share/man/man3/XML::LibXML::Schema.3
-/usr/share/man/man3/XML::LibXML::Text.3
-/usr/share/man/man3/XML::LibXML::XPathContext.3
-/usr/share/man/man3/XML::LibXML::XPathExpression.3
-
-%files license
-%defattr(0644,root,root,0755)
-/usr/share/package-licenses/perl-XML-LibXML/b4cd683c5038b733456bfbb680f75fb1e711599a
-/usr/share/package-licenses/perl-XML-LibXML/b8d8e3d6cebbef14f46031c868317e6820c9cc34
-/usr/share/package-licenses/perl-XML-LibXML/e5387b6e32d15d2a5a50b4600f520f1e2665bb8b
