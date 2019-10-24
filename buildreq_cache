@@ -1,4 +1,7 @@
-2.0134
+2.0201
+perl(Alien::Libxml2)
+perl(Capture::Tiny)
+perl(Path::Tiny)
 perl(XML::NamespaceSupport)
 perl(XML::SAX)
 perl(XML::SAX::Base)

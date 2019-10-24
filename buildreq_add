@@ -1,5 +1,6 @@
 # This file contains additional build requirements that did not get
 # picked up automatically. One name per line, no whitespace.
+perl(Alien::Base)
 libxml2-dev
 zlib-dev
 xz-dev
