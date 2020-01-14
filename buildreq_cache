@@ -1,9 +1,10 @@
-2.0201
+2.0202
 perl(Alien::Libxml2)
 perl(Capture::Tiny)
 perl(Path::Tiny)
 perl(XML::NamespaceSupport)
 perl(XML::SAX)
 perl(XML::SAX::Base)
+perl(XML::SAX::DocumentLocator)
 perl(XML::SAX::Exception)
 perl(XML::SAX::ParserFactory)
