@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-LibXML
 Version  : 2.0206
-Release  : 24
+Release  : 25
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0206.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0206.tar.gz
 Source1  : http://cdn-fastly.deb.debian.org/debian/pool/main/libx/libxml-libxml-perl/libxml-libxml-perl_2.0134+dfsg-1.debian.tar.xz
@@ -155,47 +155,47 @@ find %{buildroot} -type f -name '*.bs' -empty -exec rm -f {} ';'
 
 %files perl
 %defattr(-,root,root,-)
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Attr.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/AttributeHash.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Boolean.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/CDATASection.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Comment.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Common.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Common.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/DOM.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Devel.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Document.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/DocumentFragment.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Dtd.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Element.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/ErrNo.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/ErrNo.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Error.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Error.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/InputCallback.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Literal.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Namespace.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Node.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/NodeList.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Number.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/PI.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Parser.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Pattern.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Reader.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Reader.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/RegExp.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/RelaxNG.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/SAX.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/SAX.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/SAX/Builder.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/SAX/Builder.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/SAX/Generator.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/SAX/Parser.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Schema.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/Text.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/XPathContext.pm
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/XPathContext.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/XML/LibXML/XPathExpression.pod
-/usr/lib/perl5/vendor_perl/5.30.3/x86_64-linux-thread-multi/auto/XML/LibXML/LibXML.so
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Attr.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/AttributeHash.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Boolean.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/CDATASection.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Comment.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Common.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Common.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/DOM.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Devel.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Document.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/DocumentFragment.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Dtd.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Element.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/ErrNo.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/ErrNo.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Error.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Error.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/InputCallback.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Literal.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Namespace.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Node.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/NodeList.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Number.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/PI.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Parser.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Pattern.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Reader.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Reader.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/RegExp.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/RelaxNG.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/SAX.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/SAX.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/SAX/Builder.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/SAX/Builder.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/SAX/Generator.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/SAX/Parser.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Schema.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/Text.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/XPathContext.pm
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/XPathContext.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/XML/LibXML/XPathExpression.pod
+/usr/lib/perl5/vendor_perl/5.32.1/x86_64-linux-thread-multi/auto/XML/LibXML/LibXML.so
