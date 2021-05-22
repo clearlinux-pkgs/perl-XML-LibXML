@@ -4,7 +4,7 @@
 #
 Name     : perl-XML-LibXML
 Version  : 2.0207
-Release  : 28
+Release  : 29
 URL      : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0207.tar.gz
 Source0  : https://cpan.metacpan.org/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0207.tar.gz
 Source1  : http://cdn-fastly.deb.debian.org/debian/pool/main/libx/libxml-libxml-perl/libxml-libxml-perl_2.0134+dfsg-1.debian.tar.xz
